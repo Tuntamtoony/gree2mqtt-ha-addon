@@ -78,8 +78,8 @@ const onSetup = function (deviceModel) {
       device_temperatureUnit: Object
         .keys(commands.temperatureUnit.value)
         .find(k => commands.temperatureUnit.value[k] === deviceModel.props[commands.temperatureUnit.code])
-        .substring(0, 1)
-        .toUpperCase(),
+        ?.substring(0, 1)
+          ?.toUpperCase() ?? 'C',
       mqttClient: client,
       mqttDeviceTopic: mqttTopicPrefix + deviceModel.mac,
       mqttPubOptions: pubmqttOptions
