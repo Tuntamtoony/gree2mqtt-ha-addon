@@ -34,3 +34,4 @@ schema:
   devices:
     - hvac_host: str
       mqtt_topic_prefix: str
+      controllerOnly: bool?
