@@ -103,8 +103,6 @@ class HOMEASSISTANT_DISCOVERY{
             'mode_command_topic':         this.mqttDeviceTopic + "/mode/set",
             'fan_mode_state_topic':       this.mqttDeviceTopic + "/fanspeed/get",
             'fan_mode_command_topic':     this.mqttDeviceTopic + "/fanspeed/set",
-            'swing_mode_state_topic':     this.mqttDeviceTopic + "/swingvert/get",
-            'swing_mode_command_topic':   this.mqttDeviceTopic + "/swingvert/set",
             'power_command_topic':        this.mqttDeviceTopic + "/power/set",
             'modes': ['off', ...Object.keys(commands.mode.value)],
             'fan_modes': Object.keys(commands.fanSpeed.value),
@@ -112,6 +110,7 @@ class HOMEASSISTANT_DISCOVERY{
             'max_temp': 30,
             'temp_step': 1,
             'temperature_unit': 'C',
+            'optimistic': true,
         }
         const DISCOVERY_Optional = {}
 
