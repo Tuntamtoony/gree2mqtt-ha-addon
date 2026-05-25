@@ -133,6 +133,7 @@ if (argv['mqtt-retain']) {
 }
 
 const publish2mqtt = function (newValue, mqttTopic) {
+  if (newValue !== undefined && newValue !== null) {
   client.publish(mqttTopicPrefix + mqttTopic + '/get', newValue.toString(), pubmqttOptions)
 }
 
