@@ -1,5 +1,5 @@
 name: Gree2MQTT
-version: 1.0.0
+version: 1.0.1
 slug: gree2mqtt
 description: Integrate WiFi GREE protocol HVAC devices with HA
 url: https://github.com/guntiss/gree2mqtt-ha-addon
