@@ -15,9 +15,9 @@ module.exports = {
     value: {
       auto: 0,
       cool: 1,
-      dry: 2,
-      fan_only: 3,
-      heat: 4
+      heat: 2,
+      dry: 3,
+      fan_only: 4
     }
   },
   // temperature unit (must be together with set temperature)
